@@ -44,10 +44,10 @@ function viewCart() {
  }
   return string
 }
-var totalPrice = cart.itemPrice[i] + cart.itemPrice[i + 1]
+var totalPrice = 0
 function total() {
   for(let i = 0; i < cart.length; i++) {
-
+   totalPrice = cart.itemPrice[i] + cart.itemPrice[i + 1]
   }
   return totalPrice
 }
